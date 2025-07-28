@@ -1,3 +1,7 @@
+console.log("script is running");
+
+
+
 let startButton = document.querySelector('.start')
 let endButton = document.querySelector('.end')
 let cells = []
@@ -108,10 +112,9 @@ function endGame() {
     const matrix = document.querySelectorAll('.cellValue')
     matrix.forEach(cell => {
         cell.innerHTML = ''
-        console.log(cell);
-
+        // console.log(cell);
+        cell.style.transform = 'rotateY(90deg)'
         cell.parentNode.style.backgroundColor = 'grey'
-        cell.style.display = 'none'
     });
     document.querySelector('.playArea').removeChild(clock)
     pair = []
