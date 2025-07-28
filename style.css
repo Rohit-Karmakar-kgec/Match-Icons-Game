@@ -1,0 +1,82 @@
+body {
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matrix {
+    background-color: grey;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    border: 5px solid #40ffc3;
+
+}
+
+.cell {
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    background-color: grey;
+    border: 2px solid grey;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 30px;
+    color: rgb(253, 78, 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button {
+    margin: 30px 10px;
+    height: 40px;
+    width: 130px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.start {
+    background-color: #40ffc3;
+}
+
+.end {
+    background-color: rgb(255, 85, 62);
+}
+
+.pipe {
+    height: 20px;
+    width: 300px;
+    background-color: whitesmoke;
+}
+
+.fluid {
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+}
+
+.cellValue {
+    transform: rotateY(90deg);
+    transition: transform 0.5s ease-out;
+}
+
+@keyframes timeOut {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
+}
